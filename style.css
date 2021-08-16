@@ -1,0 +1,167 @@
+body{
+	
+	border:5px solid black;
+	min-height:600px;
+	margin:10px 10px 10px 10px;
+	padding: 10px 10px 10px 10px;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333333;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111111;
+}
+.portfolio {
+	border-style: solid;
+	background-color:red;
+	padding-top:20px;
+	padding-left:10px;
+	margin:0px;
+	height:100px;
+	
+	
+}
+.block{
+	color:white;
+	background-color:black;
+	padding-top:20px;
+	padding-left:10px;
+	height:45px;
+	
+	
+}
+
+
+.pic{
+	background-image: url("pic.jpeg");
+	background-repeat: no-repeat;
+    background-attachment: fixed;
+	background-position: right;
+	padding:0px;
+	margin:0px;
+}
+th{
+	width:800px;
+	text-align:left;
+}
+td{
+	width:600px;
+	
+}
+.dist{
+	height:40px;
+}
+.mySlides{
+	display:none;
+	margin-left: auto;
+    margin-right: auto;
+	width: 100%;
+	HEIGHT:20%
+	
+}
+ 
+.display-left{
+	
+	position:absolute;
+	top:90%;
+	left:2.5%;
+	transform:translate(0%,-50%);
+	-ms-transform:translate(-0%,-50%)
+}
+.display-right{
+	position:absolute;
+	top:90%;
+	right:2.5%;
+	transform:translate(0%,-50%);
+	-ms-transform:translate(-0%,-50%)
+}
+.container{
+	background-color:gray;
+	border: 3px solid black;
+	margin-left:auto;
+	margin-right:auto;
+	padding:10px 10px 10px 10px;
+	height:100%;
+	width:400px;
+	
+}
+ .tooltip {
+  position: relative;
+  display: inline-block;
+  
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -60px;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.tooltip .tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
+
+.parallax1{
+	
+	background-image: url("IT1.jpeg");
+	
+
+  /* Set a specific height */
+  min-height: 500px; 
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+	
+}
+
+.center{
+	display: block;
+	margin-left:auto;
+	margin-right:auto;
+	width:50%
+	
+	
+	
+	
+}
