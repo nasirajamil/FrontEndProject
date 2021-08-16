@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+ <head>
+     <title>
+	     portfolio
+	 </title>
+	 <link rel="stylesheet"  href="style.css"> 
+
+ </head>
+    <body>
+	<h1 class="portfolio">Portfolio</h1>
+	    <ul>
+              <li><a href="home.html">Home</a></li>
+              <li><a href="gallery.html">Gallery</a></li>
+			  <li><a href="video.html">Video</a></li>
+              <li><a href="contact.html">Contact</a></li>
+              <li><a href="about.html">About</a></li>
+</ul> 
+     <h3>Gallery</h3>
+	 
+	  <img class="mySlides" src="IT1.jpeg" alt="Information technology">
+    <img class="mySlides" src="IT2.jpeg" lt="Information technology">
+    <img class="mySlides" src="IT3.jpeg" lt="Information technology">
+    <img class="mySlides" src="IT4.jpeg" lt="Information technology">
+	<button class="button  display-left" onclick="plusDivs(-1)">&#10094;</button>
+   <button class="button display-right" onclick="plusDivs(+1)">&#10095;</button>
+   
+	<script>
+	var slideIndex = 1;
+     showDivs(slideIndex);
+
+     function plusDivs(n) {
+     showDivs(slideIndex += n);
+    }
+
+    function showDivs(n) {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    if (n > x.length) {slideIndex = 1}
+    if (n < 1) {slideIndex = x.length} ;
+    for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  x[slideIndex-1].style.display = "block";
+}
+	</script>
+	 
+</body>
+</html>
